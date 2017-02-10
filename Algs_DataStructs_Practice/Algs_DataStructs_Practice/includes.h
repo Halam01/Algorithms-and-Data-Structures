@@ -2,6 +2,9 @@
 #include <vector>
 #include <iostream>
 #include <stdio.h>
+#include <cstdio>
+#include <ctime>
+#include <random>
 
 #include "algorithms.h"
 

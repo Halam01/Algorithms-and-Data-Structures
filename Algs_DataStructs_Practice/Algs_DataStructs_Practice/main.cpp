@@ -1,9 +1,16 @@
 #include "includes.h"
 
 void main() {
-	vector<int> arr1 = { 2, 4, 1, 5, 4, 6, 7, 5, 8, 1 };
+	const int size = 10;
+	int arr1[size];
+	
+	int* arr = genRand(size, arr1);
+	insertionSort(arr, 10);
 
-	bubbleSort(arr1);
+	arr = genRand(size, arr1);
+	bubbleSort(arr, 10);
+
+	
 	
 
 }
