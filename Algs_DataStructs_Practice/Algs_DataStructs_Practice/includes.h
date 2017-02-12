@@ -8,6 +8,7 @@
 
 #include "algorithms.h"
 #include "binarytree.h"
+#include "stack.h"
 
 
 using namespace std;
