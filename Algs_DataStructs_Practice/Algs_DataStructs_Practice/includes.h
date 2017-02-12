@@ -7,6 +7,7 @@
 #include <random>
 
 #include "algorithms.h"
+#include "binarytree.h"
 
 
 using namespace std;
