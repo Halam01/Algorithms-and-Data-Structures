@@ -36,6 +36,12 @@ void main() {
 	arr = genRand(size, arr1);
 	bubbleSort(arr, 10);
 
+	//testing search algs
+	int arr2[] = {1, 2, 3, 4, 5, 6, 7, 8, 9 };
+	int size2 = 9;
+	int val = 3;
+	cout << binarySearch(arr2, val, 0, size2) << endl;
+
 
 
 	
