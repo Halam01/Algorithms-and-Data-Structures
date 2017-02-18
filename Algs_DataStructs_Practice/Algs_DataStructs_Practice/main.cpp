@@ -36,6 +36,21 @@ void main() {
 	arr = genRand(size, arr1);
 	bubbleSort(arr, 10);
 
+	arr = genRand(size, arr1);
+	selectionSort(arr, 10);
+
+
+	cout << "Running MergeSort: ";
+	clock_t start = clock();
+	double duration;
+	vector<int> arrv = { 0, 2, 6, 4, 3, 5, 7, 9, 8 };
+	arrv = mergeSort(arrv);
+	for (vector<int>::iterator it = arrv.begin(); it != arrv.end(); it++)
+		cout << *it << " ";
+	duration = (clock() - start) / (double)CLOCKS_PER_SEC;
+	cout << " // Run time on " << size << " elements: " << duration;
+	cout << endl;
+
 	//testing search algs
 	int arr2[] = {1, 2, 3, 4, 5, 6, 7, 8, 9 };
 	int size2 = 9;

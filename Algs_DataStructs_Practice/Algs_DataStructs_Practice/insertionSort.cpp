@@ -22,3 +22,7 @@ void insertionSort(int arr[], int size) {
 	cout << " // Run time on " << size << " elements: " << duration;
 	cout << endl;
 };
+
+/*
+Worst case - O(n^2), may have to swap all n elements n times
+*/
