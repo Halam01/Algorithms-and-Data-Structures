@@ -12,3 +12,9 @@ std::vector<int> mergeSort(std::vector<int> arr);
 
 //search algorithms
 int binarySearch(int arr[], int val, int low, int high);
+int binaryRotated(int arr[], int val, int low, int high);
+
+
+//misc
+int fibRecur(int val);
+void fibDynam(int val);

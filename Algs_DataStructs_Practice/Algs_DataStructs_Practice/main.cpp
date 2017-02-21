@@ -1,4 +1,5 @@
 #include "includes.h"
+#include "hash.h"
 
 void main() {
 
@@ -55,11 +56,38 @@ void main() {
 	int arr2[] = {1, 2, 3, 4, 5, 6, 7, 8, 9 };
 	int size2 = 9;
 	int val = 3;
-	cout << binarySearch(arr2, val, 0, size2) << endl;
+	cout << "Binary Search: " << binarySearch(arr2, val, 0, size2) << endl;
 
 
-
+	//binary search of rotated array
+	int arr3[] = { 5, 6, 7, 8, 1, 2, 3 };
+	int size3 = 7;
+	int val2 = 1;
+	cout << "Rotated Binary Search: " << binaryRotated(arr3, val2, 0, size3) << endl;
+    val2 = 8;
+	cout << "Rotated Binary Search: " << binaryRotated(arr3, val2, 0, size3) << endl;
+	val2 = 6;
+	cout << "Rotated Binary Search: " << binaryRotated(arr3, val2, 0, size3) << endl;
+	val2 = 2;
+	cout << "Rotated Binary Search: " << binaryRotated(arr3, val2, 0, size3) << endl;
 	
+	//hash
+	hash_arr h = hash_arr(5);
+	int arr4[] = { 1, 3, 5, 7, 8 };
+	int arr5[] = { 3, 4, 7, 1, 2};
+
+	for (int i = 0; i < 5; i++) {
+		h.insert(arr4[i]);
+		h.insert(arr5[i]);
+	}
+	
+	//find common elements
+	cout << "Common elements: ";
+	h.commonElements();
+
+	//fibbonaci
+	cout << "10th element using Fibbonaci Recursive: " << fibRecur(10) << endl;
+	fibDynam(10);
 	
 
 }
