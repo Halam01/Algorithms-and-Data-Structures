@@ -18,3 +18,4 @@ int binaryRotated(int arr[], int val, int low, int high);
 //misc
 int fibRecur(int val);
 void fibDynam(int val);
+void findPrimes(int n);

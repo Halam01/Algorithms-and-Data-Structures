@@ -85,9 +85,7 @@ void main() {
 	cout << "Common elements: ";
 	h.commonElements();
 
-	//fibbonaci
-	cout << "10th element using Fibbonaci Recursive: " << fibRecur(10) << endl;
-	fibDynam(10);
-	
+	//primes
+	findPrimes(50);
 
 }
