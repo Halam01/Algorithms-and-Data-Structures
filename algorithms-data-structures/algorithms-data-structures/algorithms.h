@@ -14,6 +14,9 @@ std::vector<int> mergeSort(std::vector<int> arr);
 int binarySearch(int arr[], int val, int low, int high);
 int binaryRotated(int arr[], int val, int low, int high);
 
+//encryption
+std::string encryptShiftCypher(int key, std::string text);
+std::string decryptShiftCypher(int key, std::string text);
 
 //misc
 int fibRecur(int val);

@@ -1,7 +1,7 @@
 #include "includes.h"
 #include "hash.h"
 
-void main() {
+int main() {
 
 	//testing binary tree class
 	binaryTree btree = binaryTree();
@@ -87,5 +87,12 @@ void main() {
 
 	//primes
 	findPrimes(50);
+    
+    //fibonacci sequences
+    //fibRecur(10);
+    //fibDynam(10);
+    
+    decryptShiftCypher(2, encryptShiftCypher(2, "Hello World"));
 
+    return 0;
 }

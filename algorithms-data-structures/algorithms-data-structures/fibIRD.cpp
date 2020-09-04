@@ -8,6 +8,7 @@ int fibRecur(int val) {
 	if (val == 1) {
 		return 1;
 	}
+    cout << val - 1 + val - 2 << " ";
 	return fibRecur(val - 1) + fibRecur(val - 2);
 	
 };
