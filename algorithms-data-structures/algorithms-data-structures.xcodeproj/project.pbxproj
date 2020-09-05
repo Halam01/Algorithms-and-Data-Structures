@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EB283E082503091600D9F1E2 /* trieSearchDFS.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EB283E072503091600D9F1E2 /* trieSearchDFS.cpp */; };
 		EB92BC5825022F4B00A65EC8 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EB92BC5725022F4B00A65EC8 /* main.cpp */; };
 		EB92BC6C25022F6800A65EC8 /* fibIRD.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EB92BC6525022F6800A65EC8 /* fibIRD.cpp */; };
 		EB92BC6D25022F6800A65EC8 /* FindCommon.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EB92BC6725022F6800A65EC8 /* FindCommon.cpp */; };
@@ -37,6 +38,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		EB283E072503091600D9F1E2 /* trieSearchDFS.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = trieSearchDFS.cpp; sourceTree = "<group>"; };
+		EB283E0F2503290D00D9F1E2 /* trieSearchDFS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = trieSearchDFS.h; sourceTree = "<group>"; };
 		EB92BC4C25022DE500A65EC8 /* algorithms-data-structures */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "algorithms-data-structures"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB92BC5725022F4B00A65EC8 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		EB92BC5925022F6700A65EC8 /* findPrimes.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = findPrimes.cpp; sourceTree = "<group>"; };
@@ -112,6 +115,8 @@
 				EB92BC6425022F6800A65EC8 /* stack.h */,
 				EB92BC5725022F4B00A65EC8 /* main.cpp */,
 				EB92BC79250233C300A65EC8 /* shiftCipher.cpp */,
+				EB283E072503091600D9F1E2 /* trieSearchDFS.cpp */,
+				EB283E0F2503290D00D9F1E2 /* trieSearchDFS.h */,
 			);
 			path = "algorithms-data-structures";
 			sourceTree = "<group>";
@@ -182,6 +187,7 @@
 				EB92BC7625022F6800A65EC8 /* findPrimes.cpp in Sources */,
 				EB92BC7525022F6800A65EC8 /* genRand.cpp in Sources */,
 				EB92BC6E25022F6800A65EC8 /* selectionSort.cpp in Sources */,
+				EB283E082503091600D9F1E2 /* trieSearchDFS.cpp in Sources */,
 				EB92BC7825022F6800A65EC8 /* stack.cpp in Sources */,
 				EB92BC5825022F4B00A65EC8 /* main.cpp in Sources */,
 				EB92BC7025022F6800A65EC8 /* AVLTree.cpp in Sources */,

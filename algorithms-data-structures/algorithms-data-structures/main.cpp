@@ -1,5 +1,6 @@
 #include "includes.h"
 #include "hash.h"
+#include "trieSearchDFS.h"
 
 int main() {
 
@@ -93,6 +94,34 @@ int main() {
     //fibDynam(10);
     
     decryptShiftCypher(2, encryptShiftCypher(2, "Hello World"));
+    
+    cout << "Testing Trie DFS Search: " << endl;
+    list<string>* foundStrings = new list<string>();
+    trieNode* rootNode = new trieNode();
+    trieInsert(rootNode, "Michael");
+    trieInsert(rootNode, "Dwight");
+    trieInsert(rootNode, "Jim");
+    trieInsert(rootNode, "Pam");
+    trieInsert(rootNode, "Angela");
+    trieInsert(rootNode, "Oscar");
+    trieInsert(rootNode, "Mark");
+    trieInsert(rootNode, "Mathew");
+    trieInsert(rootNode, "Luke");
+    trieInsert(rootNode, "John");
+
+    cout << "Search term 'M': " << endl;
+    trieSearch(rootNode, "M", "", foundStrings);
+    cout << "Search term 'Ma': " << endl;;
+    trieSearch(rootNode, "Ma", "", foundStrings);
+    cout << "Search term 'Mar': " << endl;;
+    trieSearch(rootNode, "Mar", "", foundStrings);
+    cout << "Search term 'J': " << endl;;
+    trieSearch(rootNode, "J", "", foundStrings);
+    cout << "Search term 'Ji': " << endl;;
+    trieSearch(rootNode, "Ji", "", foundStrings);
+    
+    delete foundStrings;
+    delete rootNode;
 
     return 0;
 }
