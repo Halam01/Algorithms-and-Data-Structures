@@ -14,13 +14,14 @@
 struct Node {
     int value;
     Node* next;
+    Node* prev;
 };
 
 class LinkedList {
     private:
+    public:
         Node* headNode;
     
-    public:
         LinkedList();
         LinkedList(Node* headNode);
         ~LinkedList();

@@ -2,6 +2,7 @@
 #include "hash.h"
 #include "trieSearchDFS.h"
 #include "linkedlist.h"
+#include "doublylinkedlist.h"
 
 int main() {
 
@@ -96,7 +97,7 @@ int main() {
     
     decryptShiftCypher(2, encryptShiftCypher(2, "Hello World"));
     
-    cout << "Testing Trie DFS Search: " << endl;
+    cout << "\nTesting Trie DFS Search: " << endl;
     list<string>* foundStrings = new list<string>();
     trieNode* rootNode = new trieNode();
     trieInsert(rootNode, "Michael");
@@ -124,6 +125,7 @@ int main() {
     delete foundStrings;
     delete rootNode;
     
+    cout << "Testing LinkedList: " << endl;
     Node* node = new Node();
     node->value = 1;
     LinkedList* list1 = new LinkedList(node);
@@ -138,6 +140,22 @@ int main() {
     list1->print();
     list1->erase();
     list1->print();
+    
+    cout << "Testing DoublyLinkedList: " << endl;
+    Node* node2 = new Node();
+    node2->value = 1;
+    DoublyLinkedList* list2 = new DoublyLinkedList(node2);
+    list2->append(2);
+    list2->push(3);
+    list2->insert(1, 4);
+    list2->print();
+    cout << "index 2: " << list2->get(2)->value << endl;
+    list2->deleteIndex(2);
+    list2->print();
+    list2->deleteKey(1);
+    list2->print();
+    list2->erase();
+    list2->print();
 
     return 0;
 }
