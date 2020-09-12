@@ -1,6 +1,7 @@
 #include "includes.h"
 #include "hash.h"
 #include "trieSearchDFS.h"
+#include "linkedlist.h"
 
 int main() {
 
@@ -122,6 +123,21 @@ int main() {
     
     delete foundStrings;
     delete rootNode;
+    
+    Node* node = new Node();
+    node->value = 1;
+    LinkedList* list1 = new LinkedList(node);
+    list1->append(2);
+    list1->push(3);
+    list1->insert(1, 4);
+    list1->print();
+    cout << "index 2: " << list1->get(2)->value << endl;
+    list1->deleteIndex(2);
+    list1->print();
+    list1->deleteKey(1);
+    list1->print();
+    list1->erase();
+    list1->print();
 
     return 0;
 }
