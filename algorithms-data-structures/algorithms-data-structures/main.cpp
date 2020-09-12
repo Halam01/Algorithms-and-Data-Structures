@@ -3,6 +3,7 @@
 #include "trieSearchDFS.h"
 #include "linkedlist.h"
 #include "doublylinkedlist.h"
+#include "circularlylinkedlist.h"
 
 int main() {
 
@@ -134,6 +135,8 @@ int main() {
     list1->insert(1, 4);
     list1->print();
     cout << "index 2: " << list1->get(2)->value << endl;
+    cout << "size: " << list1->size() << endl;
+    cout << "recursiveSize: " << list1->sizeRecursive(list1->headNode) << endl;
     list1->deleteIndex(2);
     list1->print();
     list1->deleteKey(1);
@@ -150,12 +153,32 @@ int main() {
     list2->insert(1, 4);
     list2->print();
     cout << "index 2: " << list2->get(2)->value << endl;
+    cout << "size: " << list2->size() << endl;
+    cout << "recursiveSize: " << list2->sizeRecursive(list2->headNode) << endl;
     list2->deleteIndex(2);
     list2->print();
     list2->deleteKey(1);
     list2->print();
     list2->erase();
     list2->print();
+    
+    cout << "Testing CircularlyLinkedList: " << endl;
+    Node* node3 = new Node();
+    node3->value = 1;
+    CircularlyLinkedList* list3 = new CircularlyLinkedList(node3);
+    list3->append(2);
+    list3->push(3);
+    list3->insert(1, 4);
+    list3->print();
+    cout << "index 2: " << list3->get(2)->value << endl;
+    cout << "size: " << list3->size() << endl;
+    cout << "recursiveSize: " << list3->sizeRecursive(list3->headNode) << endl;
+    list3->deleteIndex(2);
+    list3->print();
+    list3->deleteKey(1);
+    list3->print();
+    list3->erase();
+    list3->print();
 
     return 0;
 }
